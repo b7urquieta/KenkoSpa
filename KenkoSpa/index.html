@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header img, section img {
+      width: 100%;
+      height: auto;
+      max-width: 1200px;
+      margin: 0 auto; /* Centrar la imagen */
+    }
+
+    section {
+      padding: 20px;
+      background-color: #fce4ec; /* Rosa pastel */
+      margin-bottom: 20px;
+      text-align: center; /* Centrar el contenido */
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+
+    .navbar {
+      background-color: #fce4ec; /* Rosa pastel */
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .kenko-spa {
+      color: #333; /* Texto oscuro sobre fondo rosa pastel */
+      font-size: 24px;
+    }
+
+    .menu {
+      display: flex;
+    }
+
+    .menu a {
+      color: #333; /* Texto oscuro */
+      text-decoration: none;
+      padding: 15px;
+    }
+
+    .menu a:hover {
+      background-color: #ffd4eb; /* Rosa pastel más claro al pasar el mouse */
+    }
+
+    .burger-menu {
+      font-size: 24px;
+      color: #333; /* Texto oscuro */
+      cursor: pointer;
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fce4ec; /* Rosa pastel */
+      }
+
+      .menu a {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .burger-menu {
+        display: block;
+      }
+    }
+  </style>
+  <title>Kenko Spa</title>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="kenko-spa">Kenko Spa</div>
+    <div class="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Acerca de</a>
+      <a href="#">Contacto</a>
+    </div>
+    <div class="burger-menu">&#9776;</div>
+  </div>
+
+  <header>
+    <img src="Imagenes proyecto/Imagenes proyecto/headerprincipal.jpg" alt="Header Principal">
+  </header>
+
+  <section id="tratamientos">
+    <h2>Tratamientos</h2>
+    <img src="Imagenes proyecto/Imagenes proyecto/tratamientos.jpg" alt="Tratamientos">
+    <!-- Otros contenidos relacionados con tratamientos -->
+  </section>
+
+  <section id="instalaciones">
+    <h2>Instalaciones</h2>
+    <img src="Imagenes proyecto/Imagenes proyecto/instalaciones.jpg" alt="Instalaciones">
+    <!-- Otros contenidos relacionados con instalaciones -->
+  </section>
+
+
+  <footer>
+    <p>&copy; 2023 Kenko Spa</p>
+  </footer>
+
+</body>
+</html>
